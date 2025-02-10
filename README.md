@@ -1,3 +1,3 @@
-# Cindy's Portfolio
+# Objective
 
-I created this repositiory to showcase my online portfolio and practice using React + Vite.
+Your task is to build a portfolio website using React that includes a dark mode and light mode toggle.

@@ -1,0 +1,29 @@
+.portfolio {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

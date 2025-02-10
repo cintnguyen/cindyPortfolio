@@ -5,13 +5,13 @@ import Portfolio from './components/Portfolio'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <main>
-      <Header />
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Portfolio />
-    </main>
+    </div>
   )
 }
 

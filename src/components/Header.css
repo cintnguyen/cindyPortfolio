@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation Bar */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Navigation Links */
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .header ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .header ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Dark Mode */
+  .light {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --accent-color: #007bff;
+  }
+  
+  .dark {
+    --bg-color: #222;
+    --text-color: #f4f4f4;
+    --accent-color: #ffcc00;
+  }
+  
+  /* Toggle Button */
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    background: var(--accent-color);
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  

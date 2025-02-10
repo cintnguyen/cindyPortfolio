@@ -1,17 +1,19 @@
 import { useState } from "react";
+import "./Header.css";
 
-
-const Header = () => {
-
+const Header = ({ darkMode, setDarkMode }) => {
 
 
     return (
-        <nav>
+        <nav className={`header ${darkMode ? "dark" : "light"}`}>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button onClick={() => setDarkMode(!darkMode)}>
+                {darkMode ? "Light Mode" : "Dark Mode"}
+            </button>
         </nav>
 
 
